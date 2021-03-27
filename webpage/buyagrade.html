@@ -4,7 +4,7 @@
 		<title>Buy Your Way to a Better Education!</title>
 		<link href="buyagrade.css" type="text/css" rel="stylesheet" />
 	</head>
-	
+
 	<body>
 		<h1>Buy Your Way to a Better Education!</h1>
 
@@ -13,27 +13,37 @@
 		</p>
 		
 		<hr />
-		
+		<form action="sucker.php" method="post">
 		<h2>Give Us Your Money</h2>
 		<dl>
 			<dt>Name</dt>
 			<dd>
-				???
+				<input type="text" name="name" id="name">
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<select name="section" id="section">
+					<optgroup label="(Select a section)">
+						<option value="001">001</option>
+						<option value="002">002</option>
+						<option value="003">003</option>
+						<option value="004">004</option>
+						<option value="005">005</option>
+					</optgroup>
+				</select>
 			</dd>
 			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="card" id="card">
 			</dd>
 		</dl>
-		
+			<input type="radio" name="cardType" value="visa" > Visa
+			<input type="radio" name="cardType" value="MasterCard"> MasterCard
 		<div>
-			I am a giant sucker.
+			<input type="submit" value="I am a giant sucker.">
 		</div>
+		</form>
 	</body>
 </html>
